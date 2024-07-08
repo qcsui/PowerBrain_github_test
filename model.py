@@ -101,6 +101,9 @@ if __name__ == "__main__":
             # gradient descent or adam step
             optimizer.step()
 
+    # save model
+    torch.save(model.state_dict(), "static/data/model/cnn.pth")
+
     # Check accuracy on training & test to see how good our model
     def check_accuracy(loader, model):
         num_correct = 0

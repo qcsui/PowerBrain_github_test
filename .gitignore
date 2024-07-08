@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 
 static/img_test/
+static/data/model/
+dataset/

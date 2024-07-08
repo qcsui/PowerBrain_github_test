@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # Load model
 model = CNN()
-model.load_state_dict(torch.load("cnn.pth"))
+model.load_state_dict(torch.load("static/data/model/cnn.pth"))
 model.eval()
 
 # Load class names
